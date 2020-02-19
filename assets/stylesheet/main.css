@@ -1,0 +1,34 @@
+#bod{
+    background-image: url(pict1.jpg);
+    background-size: 100%;
+    background-repeat: none;
+}
+    
+.navi{
+    background-color: rgb(35, 39, 58);
+    border-radius: 6px;
+    height: 55px;
+    padding-top: 10px;
+
+}
+h1{
+    text-align: center;
+}
+
+.navi li{
+    display: inline;
+    font-size: 20px;
+    padding:60px 100px 60px 100px;
+
+}
+a{
+    text-decoration: none;
+    color: silver;
+
+}
+a:hover{
+    background-color:black;
+    border-radius: 6px;
+    padding: 26px 0px 17px 0px;
+    border:0px 20px 0px 20px;
+}
