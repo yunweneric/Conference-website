@@ -1,5 +1,3 @@
-
-Build a GCE result check platform
 Simple none responsive conference website. Having  speaker section, venue and register page.
 
 ![GitHub Logo](./download.png)
