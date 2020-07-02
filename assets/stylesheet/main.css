@@ -1,34 +1,464 @@
-#bod{
-    background-image: url(pict1.jpg);
-    background-size: 100%;
-    background-repeat: none;
+/*
+=====================================
+            GRID 
+=====================================
+*/
+*{
+    margin:0;
+    padding:0;
+} 
+*,
+*:before,
+*:after{
+    -webkit-box-sizing:border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;           
 }
-    
-.navi{
-    background-color: rgb(35, 39, 58);
-    border-radius: 6px;
-    height: 55px;
-    padding-top: 10px;
 
+.col-1-3, 
+.col-2-3{
+    display: inline-block;
+    vertical-align: top;
+}
+.col-1-3{
+    width:33%;
+}
+.col-2-3{
+    width:48.6%
+}
+.grid,
+.col-2-3, 
+.col-1-3{
+    padding: 0px;
+    margin: 20px 0px;
+}
+.container,
+.grid{
+    margin:auto;
+    width:960px;
+}
+
+.top-hero{
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(wall5.jpg);
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.group{
+    margin-bottom: 100px;
+}
+/*
+=====================================
+    TYPOGRAPHY/CUSTOM STYLES
+=====================================
+*/
+body{
+    color:#888;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    background: #fff;
+}
+h1,h2,h3,h4,h5, p{
+    margin: 22px;
+    word-spacing: 1px;
+    color:#648888;
 }
 h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+h2{
+    font-size: 24px;
+    line-height: 44px;
+}
+h3{
+    font-size: 21px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    color:#a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+strong{
+    font-weight: 400;
+}
+cite, em{
+    font-style: italic;
+}
+
+/*=======================================
+            Home
+=========================================
+*/
+.logo{
+    float:left;
+    font-size: 48px;
+    line-height: 44px;
+    padding: 30px 0 22px 0;
+    text-transform: uppercase;
+}
+.logo:hover{
+    border-bottom:4px solid #0066ff;
+}
+
+.clearfix{
+    display: table;
+    clear:both;
+}
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    
+}
+.tagline{
+    margin:0 0 22px 0;
+    text-align: right;
+    padding: 20px 0 0 0;
+    color:#fff;
+}
+.nav{
+    text-align: right;
+}
+.bottom-hero{
+    background-color: #0e2e5e;
+    height: 250px;
+
+}
+.primary-footer{
+    color:#fff;
+    font-size: 14px;
+    padding:200px 0 0 0;
+    
+
+}
+.primary-footer small{
+    font-weight: 400;
+    color:#fff;
+    margin-bottom: 0;
+    float: left;
+
+}
+.hero p{
+    font-size: 24px;
+}
+.hero a{
+    margin: 0 5px;
+    
+}
+.hero h2{
+    font-size: 36px;
+}
+.hero{
+    margin-bottom: 10px;
+}
+
+.btn{
+    border-radius: 5px;
+    padding:5px 10px;
+    border:1px solid #fff;
+    color:#fff;
+}
+.btn-alt,
+.btn-alt2{
+    float: right;
+}
+.btn-alt2{
+    border:1px solid #0066ff;
+}
+.btn-alt:hover{
+    color:#0066ff;
+    border:1px solidc
+}
+.btn-alt2:hover{
+    color:#fff;
+    border:1px solid #fff
+}
+.btn-reg{
+    font-size: 22px;
     text-align: center;
+    display: inline-block;
+    border:1px solid #dfe2ef;
+    padding: 10px 30px;
+    margin: 20px 0px 20px 380px;
+    animation:animate 1.3s infinite linear;
+    
 }
-
-.navi li{
-    display: inline;
-    font-size: 20px;
-    padding:60px 100px 60px 100px;
-
+@keyframes animate{
+    0%{background-color: rgb(250, 117, 40);
+    border: 1px solid #0066ff;}
+      
 }
+.btn-reg:hover{
+    border:1px solid #0066ff;
+}
+.teaser{
+    padding: 0 10px 50px 0 ;
+}
+.teaser img{
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.7s;
+}
+.teaser p,
+.teaser h3,
+.teaser h5{
+    text-align: center;
+    border: 1px solid #fff;
+    padding:10px 0;
+}
+.teaser img:hover{
+    transition: 0.7s;
+    transform: scale(1.05);
+    background-color: linear-gradient(#000, #000);
+    filter: blur(2px);
+}
+.teaser h3:hover{
+    color: #0e2e5e;
+    border: 1px solid #0066ff;
+    border-radius:5px;
+    padding:10px 0;
+}
+/*
+=====================================
+           LINKS
+=====================================
+*/
 a{
     text-decoration: none;
-    color: silver;
-
+    color:#648880;
 }
 a:hover{
-    background-color:black;
-    border-radius: 6px;
-    padding: 26px 0px 17px 0px;
-    border:0px 20px 0px 20px;
+    color:#a9b2b9;
+
+}
+p a{
+    border-bottom: 1px solid #dfe2e5;
+}
+
+.head2{
+    text-align: center;
+    clear: both;
+    margin: 250px 0 0 0px;
+    
+}
+.head2 p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 44px;
+
+}
+.head3 h3{
+    text-align: left;
+    color: #fff;
+}
+.primary-header h1,
+.primary-header a{
+    color: #fff;
+}
+.row {
+    background: #fff;
+}
+
+/*=======================
+        Speaker
+=========================
+*/
+.container2{
+    width: 80%;
+    margin: 0 auto;
+}
+.others{
+    margin-top: 80px;
+}
+.jen-img{
+    position: relative;
+    width: 25%;
+    margin: 80px 10px 100px 0;
+}
+
+.jen-img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    float: left;
+
+ }
+ .container3 h1{
+     margin: 80px auto;
+     width: 50%;
+     text-align: center;
+     color: #0e2e5e;
+     border: 1px solid none;
+     border-bottom: 2px solid #0066ff;
+     padding-bottom: 20px;
+ }
+ .jen-img:hover img{
+     filter: blur(2px) brightness(60%);
+     transition:0.7s;
+     transform: scale(1.15);
+ }
+ .jen-img :not(img){
+     position: absolute;
+     top: 40px;
+     color: #fff;
+     transition: .7s;
+     z-index: 1;
+     opacity: 0;
+     font-size: 20px;
+     font-style: italic;
+     text-align: center;
+     overflow: hidden;
+
+ }
+ .jen-img :not(img):hover{
+     opacity: 1;
+}
+.speaker-details{
+    float: right;
+    width: 70%;
+    text-align: center;
+    line-height: 25px;
+    margin: 10px 10px 10px 0;
+}
+
+.h11 h1{
+    color:#fff;
+    text-align: center;
+    margin-top: 0;
+} 
+ul{
+    list-style-type:none;
+}
+.last-margin{
+    margin-top: 450px;
+}
+
+/*
+=========================================
+            VENUE
+=========================================
+*/
+.ven{
+    width:100%;
+    height: 450px;
+    
+}
+.ven2{
+    text-align:center;
+    margin-top: 150px;
+}
+/*
+=========================================
+            Register
+=========================================
+*/
+legend h2{
+    text-align: center;
+    font: 22px/1.4 "lato";
+    color: #fff;
+    margin-top: 50px;
+    padding-top: 60px;
+    
+}
+label p{
+    text-align: right;
+    font: 22px/1.4 "lato";
+    color: #fff;
+    margin: 0 0 0 300px;
+}
+form{
+    background-color: #0e2e5e;
+    margin: 80px 0 80px 0;
+    border-radius: 10px;
+}
+fieldset{
+    display: inline-block;
+}
+
+input,
+textarea{
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 20px 20px 30px 220px;
+}
+label i{
+    font-size: 200px;
+    transform: rotate(-30deg);
+    color: #fff;
+    margin: 150px 20px 150px 40px;
+    float: left;
+}
+
+/*
+=========================================
+           Schedules
+=========================================
+*/
+
+thead th{
+    font-size: 16px;
+    height: 40px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 50px auto 90px auto;
+    font-size: 0.9em;
+    min-width: 1000px;
+    border-radius: 5px 5px 0 0;
+    min-height: 200px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #07070752;
+    
+}
+.container4 h1{
+    margin: 80px auto;
+    width: 50%;
+    text-align: center;
+    color: #0e2e5e;
+    border: 1px solid none;
+    border-bottom: 2px solid #0066ff;
+    padding-bottom: 20px;
+}
+.content-table thead tr{
+    background-color: #0066ff;;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+
+}
+.content-table th,
+.content-table td{
+    padding: 18px 12px 18px 12px;
+
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+    
+}
+.content-table tbody tr.active-row{
+    background-color: #0066ffb9;
+    color: #fff;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #0066ff;;
 }

@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
-        <title>Register</title>
+        <title>Conference website</title>
+        <link rel="stylesheet" href="assets/stylesheet/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="assets/stylesheet/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/stylesheet/main.css">
     </head>
+
+
     <body>
-        <header>
-            <h1>Registration</h1>
-        </header>
+        <section class="top-hero">
+            <header class="primary-header group container">
+                <h1 class="logo">Styles<br>Conference</h1>
+                <h3 class="tagline">August 24&ndash;26th&mdash;Chicago, IL</h3>
+                <nav class="hero primary-nav">
+                    <ul>
+                        <li><a href="venue.html" class="btn btn-alt">Venue</a></li>
+                        <li><a href="schedule.html" class="btn btn-alt">Schedule</a></li>
+                        <li><a href="speaker.html" class="btn btn-alt">Speakers</a></li>                     
+                        <li><a href="index.html" class="btn btn-alt">home</a></li>
+                    </ul>
+                </nav>
+                <div class="head2">
+                    <h1>Dedicated to building websites</h1>
+                    <p>
+                        Every year the brightest web designers and front-end developers descend on Chicago to discuss
+                        the latest technologies. Jion us this February!
+                    </p>
+                </div>
+            </header>
+        </section>
+
+        <section class="container">
+            <section class="teaser">
+                
+
+                <form  action="" method="POST">
+                    <fieldset">
+                        <label class="enve">
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                    </fieldset>
+                    <legend>
+                        <h2>Register Here</h2>
+                    </legend>
+                    <fieldset>
+                        <label>
+                            <input type="name" name="Username" placeholder="Username">
+                        </label>
+                        <label>
+                            <input type="tel" name="phone" placeholder="+237------------">
+                        </label>
+
+                        <label>
+                            <input type="email" name="email" placeholder="name@domain.com">
+                        </label>
+                        <label>Gender
+                            <input type="radio" name="gender"> Male
+                            <input type="radio" name="gender"> Female
+                            <input type="radio" name="gender"> Other
+                        </label>
+                        
+                        <label>
+                            <textarea>
+                            </textarea>
+                        </label>
+                        <label>
+                            <input type="submit" name="submit" value="Send">
+                        </label>
+                    </fieldset>
+                </form>
+            
+
+
+            </section>
+        </section>
+        <section class="bottom-hero">
+            <footer class="primary-footer container">
+                <small>&copy;Style Conference</small>
+                <nav class="hero">
+                    <ul>
+                        <li><a href="venue.html" class="btn btn-alt2">Venue</a></li>
+                        <li><a href="schedule.html" class="btn btn-alt2">Schedule</a></li>
+                        <li><a href="speaker.html" class="btn btn-alt2">Speakers</a></li>
+                        <li><a href="index.html" class="btn btn-alt2">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </footer>
+        </section>
     </body>
+
 </html>
